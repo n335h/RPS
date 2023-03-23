@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rock, paper, scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <h1 class='title'>rock, paper, scissors</h1>
+    <!--- Login --->
+    <div id="username-form">
+        <form id="username-input-form">
+          <img class="minilogo" src="https://i.ibb.co/SVbwwHw/RPS.png">
+         
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" maxlength="10">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+    <!--- Rock paper scissors game --->
+    <div class="game-container">
+     
+      <div class="game-choices">
+        <button id="button" class="rock"><img src="https://i.ibb.co/rcg3gtF/rock.png"></button>
+        <button id="button" class="paper"><img src="https://i.ibb.co/JmmwPDV/paper.png"></button>
+        <button id="button" class="scissors"><img src="https://i.ibb.co/bbp7yxQ/scissors.png"></button>
+      </div>
+      <div class="game-result">
+        <p class="result"></p>
+               
+        <div id="scores">
+          <p class="userScore"> 0 </p><p>-</p> <p class="pcScore"> 0 </p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
