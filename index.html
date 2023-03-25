@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-     <h1 class='title'>rock, paper, scissors</h1>
+    <header>
+      <h1 class='title'>rock, paper, scissors</h1></header>
     <!--- Login --->
     <div id="username-form">
         <form id="username-input-form">
@@ -21,18 +22,20 @@
     <div class="game-container">
      
       <div class="game-choices">
-        <button id="button" class="rock"><img src="https://i.ibb.co/rcg3gtF/rock.png"></button>
-        <button id="button" class="paper"><img src="https://i.ibb.co/JmmwPDV/paper.png"></button>
-        <button id="button" class="scissors"><img src="https://i.ibb.co/bbp7yxQ/scissors.png"></button>
+        <button id="button" class="rock"><img id="img" src="https://i.ibb.co/rcg3gtF/rock.png"></button>
+        <button id="button" class="paper"><img id="img" src="https://i.ibb.co/JmmwPDV/paper.png"></button>
+        <button id="button" class="scissors"><img id="img" src="https://i.ibb.co/bbp7yxQ/scissors.png"></button>
       </div>
       <div class="game-result">
         <p class="result"></p>
                
-        <div id="scores">
-          <p class="userScore"> 0 </p><p>-</p> <p class="pcScore"> 0 </p>
-        </div>
-      </div>
-    </div>
+        <div class="scores">
+  <div class="userName"></div>
+  <div class="userScore">0</div>
+  <div class="break"> - </div>
+  <div class="pcScore">0</div>
+  <div class="PC"></div>
+</div>
     <script src="main.js"></script>
   </body>
 </html>

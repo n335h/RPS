@@ -1,5 +1,3 @@
-Not that mobile friendly right now
-
 # Rock Paper Scissors, DOM Edition
 
 Following on from last week's hackathon, we want to refactor our rock, paper, scissors console application and turn it into an interactive HTML page.
