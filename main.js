@@ -3,7 +3,7 @@ const usernameForm = document.querySelector('#username-form');
 const game = document.querySelector('.game-container');
 var usernameInputForm = document.querySelector('#username-input-form');
 var usernameInput = document.querySelector('#username');
-var userNameSB = document.querySelector('#userNameSB')
+var userNameSB = document.querySelector('.userNameSB')
 
 //Username submit event listener
 usernameInputForm.addEventListener('submit', function(event) {
@@ -14,9 +14,10 @@ usernameInputForm.addEventListener('submit', function(event) {
   //If username is valid, show game and hide username form
   if (userName.length > 0 && userName.length <= 10) {
    
-    usernameForm.style.display = 'none';
+ usernameForm.style.display = 'none';
     game.style.display= 'block';
-    
+    userNameSB.innerText = userName;
+       
     console.log(userName)
 
   } else {
