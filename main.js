@@ -5,7 +5,7 @@ var usernameInputForm = document.querySelector('#username-input-form');
 var usernameInput = document.querySelector('#username');
 var userNameSB = document.querySelector('.userNameSB')
 
-//Username submit event listener
+
 usernameInputForm.addEventListener('submit', function(event) {
   event.preventDefault();
   
@@ -24,6 +24,7 @@ usernameInputForm.addEventListener('submit', function(event) {
     alert('Please enter a valid username (max 10 characters)');
   }
 });
+
 
 // Assigning variables to HTML elements using DOM, buttons and results
 const rockBtn = document.querySelector('.rock');
@@ -75,7 +76,21 @@ function playGame(userChoice) {
   // Show the result
   resultEl.textContent = `You chose ${userChoice}, the computer chose ${computerChoice}. ${result}`;
   resultEl.parentElement.style.display = 'block';
+
+  const resetBtn = document.querySelector('#reset');
+  resetBtn.addEventListener('click', () => {
+    const confirmed = confirm('Are you sure you want to reset the game?');
+    if (confirmed) {
+      resultEl.parentElement.style.display = 'none';
+      userScore.innerText = 0;
+      pcScore.innerText = 0;
+      userPoints = 0;
+      pcPoints = 0;
+
+  }
+});
 }
+
 
 
 

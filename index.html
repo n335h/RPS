@@ -10,7 +10,7 @@
     <!--- Login --->
     <div id="username-form">
         <form id="username-input-form">
-          <img class="minilogo" src="https://i.ibb.co/SVbwwHw/RPS.png">
+          <img class="minilogo" src="https://i.ibb.co/SVbwwHw/RPS.png" alt="miniLogo">
          
           <label for="username">Username:</label>
           <input type="text" id="username" name="username" maxlength="10">
@@ -22,20 +22,24 @@
     <div class="game-container">
      
       <div class="game-choices">
-        <button id="button" class="rock"><img id="img" src="https://i.ibb.co/rcg3gtF/rock.png"></button>
-        <button id="button" class="paper"><img id="img" src="https://i.ibb.co/JmmwPDV/paper.png"></button>
-        <button id="button" class="scissors"><img id="img" src="https://i.ibb.co/bbp7yxQ/scissors.png"></button>
+        <button id="button" class="rock"><img id="img" src="https://i.ibb.co/rcg3gtF/rock.png" alt="rock"></button>
+        <button id="button" class="paper"><img id="img" src="https://i.ibb.co/JmmwPDV/paper.png" alt="paper"></button>
+        <button id="button" class="scissors"><img id="img" src="https://i.ibb.co/bbp7yxQ/scissors.png" alt="scissors"></button>
       </div>
       <div class="game-result">
         <p class="result"></p>
                
-        <div class="scores">
+        <!-- <div class="scores">
   <div class="userNameSB">User</div>
   <div class="userScore">0</div>
   <div class="break"> - </div>
   <div class="pcScore">0</div>
   <div class="PC"> PC </div>
-</div>
+</div> -->
+<p class="scores-center"> <span class="userNameSB"> user </span> <span class="userScore"> 0</span> - <span class="pcScore"> 0 </span> PC </p>
     <script src="main.js"></script>
+  
+   <div class="reset"><button id="reset">Reset</button></div>
   </body>
+
 </html>
